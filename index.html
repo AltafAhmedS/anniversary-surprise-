@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For My Love ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 30px;
+      border-radius: 25px;
+      max-width: 600px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .hearts {
+      font-size: 2rem;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .question {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      position: relative;
+      height: 80px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #yes {
+      background: #ff4b5c;
+      color: white;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    #yes:hover {
+      transform: scale(1.1);
+    }
+
+    #no {
+      background: white;
+      color: #ff4b5c;
+      position: absolute;
+      left: 60%;
+      top: 0;
+    }
+
+    .final {
+      display: none;
+      margin-top: 30px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .love {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="main">
+    <div class="hearts">💖 💕 💗 💞</div>
+    <h1>Hey My Love ❤️</h1>
+    <p>
+      Today is our 6-month anniversary, and I wanted to do something special for you.
+      Not something expensive… just something from my heart.
+    </p>
+
+    <div class="question">Do you love me? 😌</div>
+
+    <div class="buttons">
+      <button id="yes">YES 💕</button>
+      <button id="no">NO 😜</button>
+    </div>
+
+    <div class="final" id="final">
+      <h1>Hehehe… I knew it 😍</h1>
+      <p class="love">
+        From the moment you came into my life, everything started feeling warmer,
+        brighter, and more meaningful. These six months with you have been full of
+        smiles, little fights, deep talks, silly moments, and memories I never want
+        to forget.
+        <br><br>
+        I may not be perfect, I may not have everything in life yet, but one thing
+        I am always sure about is **you**. I love you in ways I can’t always explain,
+        but I feel it in every heartbeat. Thank you for being my happiness, my peace,
+        and my favorite person.
+        <br><br>
+        Here’s to us… and to many more months, years, and forever together. ❤️
+      </p>
+      <div class="hearts">💘 💝 💖 💗</div>
+    </div>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("no");
+    const yesBtn = document.getElementById("yes");
+    const final = document.getElementById(
